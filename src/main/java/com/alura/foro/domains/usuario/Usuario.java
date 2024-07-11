@@ -23,8 +23,6 @@ public class Usuario implements UserDetails {
     private String nombre;
     private String correo;
     private String clave;
-    @Enumerated(EnumType.STRING)
-    private Boolean activo;
 
 
     @Override
@@ -59,6 +57,6 @@ public class Usuario implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return activo;
+        return true;
     }
 }
