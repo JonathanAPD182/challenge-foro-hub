@@ -16,4 +16,11 @@ public class Curso {
     private Long id;
     private String nombre;
     private String categoria;
+    private Boolean activo;
+
+    public Curso(DatosRegistrarCurso datosRegistrarCurso) {
+            this.nombre = datosRegistrarCurso.nombre();
+            this.categoria = datosRegistrarCurso.categoria();
+            this.activo = true;
+    }
 }
